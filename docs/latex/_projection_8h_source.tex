@@ -1,0 +1,33 @@
+\doxysection{Projection.\+h}
+\hypertarget{_projection_8h_source}{}\label{_projection_8h_source}\index{src/Projection.h@{src/Projection.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ PROJECTION\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ PROJECTION\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_volume_8h}{Volume.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_projection}{Projection}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_projection_a7a5a49dcd74c491ea9564e7a6ed573f1}{Projection}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \ \ std::vector<std::vector<unsigned\ char>>\ \mbox{\hyperlink{class_projection_af05aa8895809f8e7685ee5b7510c164b}{performMIP}}(\textcolor{keyword}{const}\ std::vector<std::vector<std::vector<unsigned\ char>>>\&\ volumeData);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ std::vector<std::vector<unsigned\ char>>\ \mbox{\hyperlink{class_projection_aaef43f228dd22548a93e8a3878e554f6}{performMinIP}}(\textcolor{keyword}{const}\ std::vector<std::vector<std::vector<unsigned\ char>>>\&\ volumeData);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ std::vector<std::vector<unsigned\ char>>\ \mbox{\hyperlink{class_projection_a3c417017a96f8e291a8ba6119dc653ee}{performAIP}}(\textcolor{keyword}{const}\ std::vector<std::vector<std::vector<unsigned\ char>>>\&\ volumeData);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_projection_a86615b3b50fdf245b51fc48b4dfbd399}{getStartEndIndices}}(\textcolor{keywordtype}{int}\ volumeSize,\ \textcolor{keywordtype}{int}\&\ startIdx,\ \textcolor{keywordtype}{int}\&\ endIdx);\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ \ \ \ \ std::vector<std::vector<unsigned\ char>>\ \mbox{\hyperlink{class_projection_acb8bd174aa76997896d7bf05917d2491}{performProjection}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_volume}{Volume}}\&\ volume,\ \textcolor{keyword}{const}\ std::string\&\ projectionType);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{int}\ width;\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ height;\ \ }
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PROJECTION\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,32 @@
+\doxysection{Color\+Filter.\+h}
+\hypertarget{_color_filter_8h_source}{}\label{_color_filter_8h_source}\index{src/ColorFilter.h@{src/ColorFilter.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ COLORFILTER\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ COLORFILTER\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}Image.h"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_color_space}{ColorSpace}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{float}\ h;\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_color_space_ae697ff8bd1de6cbf5383b85f12dc416b}{s}};\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_color_space_aa8ce89511b038d05d7c1be682e86d9af}{l}};\ }
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_color_filter}{ColorFilter}}\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_image}{Image}}\ \mbox{\hyperlink{class_color_filter_a61680c54b2051e8489316d0751644179}{toGrayscale}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_image}{Image}}\&\ image);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_image}{Image}}\ \mbox{\hyperlink{class_color_filter_a52983b5f0fa7669f552bca68818e0e15}{adjustBrightness}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_image}{Image}}\&\ image,\ \textcolor{keywordtype}{int}\ brightness\ =\ 0);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_image}{Image}}\ \mbox{\hyperlink{class_color_filter_ac4b0dec502ff4610dccc16a1eff121c7}{histogramEqualization}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_image}{Image}}\&\ image,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ colorSpace);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_image}{Image}}\ \mbox{\hyperlink{class_color_filter_a66b0034a696adfcc2736a8069abf081d}{thresholdImage}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_image}{Image}}\&\ image,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ threshold,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ colorSpace);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_image}{Image}}\ \mbox{\hyperlink{class_color_filter_accec8d45c7e45228641e1078d0770d6a}{addSaltAndPepperNoise}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_image}{Image}}\&\ img,\ \textcolor{keywordtype}{float}\ noisePercent);}
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

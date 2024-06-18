@@ -1,0 +1,74 @@
+\doxysection{src/\+Slice.h File Reference}
+\hypertarget{_slice_8h}{}\label{_slice_8h}\index{src/Slice.h@{src/Slice.h}}
+
+
+Functions for saving slices of volumetric data to image files.  
+
+
+{\ttfamily \#include "{}Volume.\+h"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_slice_8h_aba13325d5dd7d59444ba131c101fdf09}{save\+Slice\+XZ}} (const \mbox{\hyperlink{class_volume}{Volume}} \&volume, const std\+::string \&output\+Path, int y\+Index)
+\begin{DoxyCompactList}\small\item\em Save a slice of the volume in the XZ plane to a PNG image file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_slice_8h_ac4d18b39dff98be5ba77844c7c8e600b}{save\+Slice\+YZ}} (const \mbox{\hyperlink{class_volume}{Volume}} \&volume, const std\+::string \&output\+Path, int x\+Index)
+\begin{DoxyCompactList}\small\item\em Save a slice of the volume in the YZ plane to a PNG image file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for saving slices of volumetric data to image files. 
+
+Group name\+: Huffman Group member name/\+Github username\+: Yuheng Chen/acse-\/cc223 Panier, Atys/edsml-\/azp123 Crespin, Francois/\+Fc-\/1223 Xuan Zhan/edsml-\/xz3323 Yixuan Jiang/\+ACSE-\/yj3023 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_slice_8h_aba13325d5dd7d59444ba131c101fdf09}\label{_slice_8h_aba13325d5dd7d59444ba131c101fdf09} 
+\index{Slice.h@{Slice.h}!saveSliceXZ@{saveSliceXZ}}
+\index{saveSliceXZ@{saveSliceXZ}!Slice.h@{Slice.h}}
+\doxysubsubsection{\texorpdfstring{saveSliceXZ()}{saveSliceXZ()}}
+{\footnotesize\ttfamily bool save\+Slice\+XZ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_volume}{Volume}} \&}]{volume,  }\item[{const std\+::string \&}]{output\+Path,  }\item[{int}]{y\+Index }\end{DoxyParamCaption})}
+
+
+
+Save a slice of the volume in the XZ plane to a PNG image file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume containing the data. \\
+\hline
+{\em output\+Path} & The path to the directory where the image will be saved. \\
+\hline
+{\em y\+Index} & The index of the Y-\/slice to be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if saving is successful, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The Y index must be within the valid range of the volume\textquotesingle{}s height.
+\end{DoxyNote}
+Group name\+: Huffman Group member name/\+Github username\+: Yuheng Chen/acse-\/cc223 Panier, Atys/edsml-\/azp123 Crespin, Francois/\+Fc-\/1223 Xuan Zhan/edsml-\/xz3323 Yixuan Jiang/\+ACSE-\/yj3023 \Hypertarget{_slice_8h_ac4d18b39dff98be5ba77844c7c8e600b}\label{_slice_8h_ac4d18b39dff98be5ba77844c7c8e600b} 
+\index{Slice.h@{Slice.h}!saveSliceYZ@{saveSliceYZ}}
+\index{saveSliceYZ@{saveSliceYZ}!Slice.h@{Slice.h}}
+\doxysubsubsection{\texorpdfstring{saveSliceYZ()}{saveSliceYZ()}}
+{\footnotesize\ttfamily bool save\+Slice\+YZ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_volume}{Volume}} \&}]{volume,  }\item[{const std\+::string \&}]{output\+Path,  }\item[{int}]{x\+Index }\end{DoxyParamCaption})}
+
+
+
+Save a slice of the volume in the YZ plane to a PNG image file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume containing the data. \\
+\hline
+{\em output\+Path} & The path to the directory where the image will be saved. \\
+\hline
+{\em x\+Index} & The index of the X-\/slice to be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if saving is successful, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The X index must be within the valid range of the volume\textquotesingle{}s width. 
+\end{DoxyNote}

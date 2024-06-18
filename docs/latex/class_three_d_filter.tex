@@ -1,0 +1,66 @@
+\doxysection{Three\+DFilter Class Reference}
+\hypertarget{class_three_d_filter}{}\label{class_three_d_filter}\index{ThreeDFilter@{ThreeDFilter}}
+
+
+Class for applying various filters to volumetric data.  
+
+
+
+
+{\ttfamily \#include $<$Three\+DFilter.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_three_d_filter_a1d919c9f51df50dae525ead123c6ecf4}{gaussian\+Blur}} (\mbox{\hyperlink{class_volume}{Volume}} \&volume, int kernel\+Size, float sigma)
+\begin{DoxyCompactList}\small\item\em Apply Gaussian blur filter to the volume. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_three_d_filter_a4844e5c2c6c85ea6400f4199934d7da4}{median\+Filter}} (\mbox{\hyperlink{class_volume}{Volume}} \&volume, int kernel\+Size)
+\begin{DoxyCompactList}\small\item\em Apply median filter to the volume. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for applying various filters to volumetric data. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_three_d_filter_a1d919c9f51df50dae525ead123c6ecf4}\label{class_three_d_filter_a1d919c9f51df50dae525ead123c6ecf4} 
+\index{ThreeDFilter@{ThreeDFilter}!gaussianBlur@{gaussianBlur}}
+\index{gaussianBlur@{gaussianBlur}!ThreeDFilter@{ThreeDFilter}}
+\doxysubsubsection{\texorpdfstring{gaussianBlur()}{gaussianBlur()}}
+{\footnotesize\ttfamily void Three\+DFilter\+::gaussian\+Blur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_volume}{Volume}} \&}]{volume,  }\item[{int}]{kernel\+Size,  }\item[{float}]{sigma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apply Gaussian blur filter to the volume. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume to apply the filter to. \\
+\hline
+{\em kernel\+Size} & The size of the Gaussian kernel. \\
+\hline
+{\em sigma} & The standard deviation of the Gaussian distribution.\\
+\hline
+\end{DoxyParams}
+Group name\+: Huffman Group member name/\+Github username\+: Yuheng Chen/acse-\/cc223 Panier, Atys/edsml-\/azp123 Crespin, Francois/\+Fc-\/1223 Xuan Zhan/edsml-\/xz3323 Yixuan Jiang/\+ACSE-\/yj3023 \Hypertarget{class_three_d_filter_a4844e5c2c6c85ea6400f4199934d7da4}\label{class_three_d_filter_a4844e5c2c6c85ea6400f4199934d7da4} 
+\index{ThreeDFilter@{ThreeDFilter}!medianFilter@{medianFilter}}
+\index{medianFilter@{medianFilter}!ThreeDFilter@{ThreeDFilter}}
+\doxysubsubsection{\texorpdfstring{medianFilter()}{medianFilter()}}
+{\footnotesize\ttfamily void Three\+DFilter\+::median\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_volume}{Volume}} \&}]{volume,  }\item[{int}]{kernel\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apply median filter to the volume. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume to apply the filter to. \\
+\hline
+{\em kernel\+Size} & The size of the median filter kernel. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_three_d_filter_8h}{Three\+DFilter.\+h}}\item 
+src/Three\+DFilter.\+cpp\end{DoxyCompactItemize}

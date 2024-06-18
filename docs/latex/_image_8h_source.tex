@@ -1,0 +1,44 @@
+\doxysection{Image.\+h}
+\hypertarget{_image_8h_source}{}\label{_image_8h_source}\index{src/Image.h@{src/Image.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ IMAGE\_H}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ IMAGE\_H}}
+\DoxyCodeLine{00017\ \ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <cstring>}}
+\DoxyCodeLine{00020\ \ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_image}{Image}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ imageData;\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ width;\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ height;\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ channels;\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_image_a58edd1c45b4faeb5f789b0d036d02313}{Image}}();}
+\DoxyCodeLine{00033\ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_image_a58edd1c45b4faeb5f789b0d036d02313}{Image}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ imageData,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{int}\ ch);}
+\DoxyCodeLine{00042\ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_image_a0294f63700543e11c0f0da85601c7ae5}{\string~Image}}();}
+\DoxyCodeLine{00047\ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_image_a58edd1c45b4faeb5f789b0d036d02313}{Image}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_image}{Image}}\&\ other);}
+\DoxyCodeLine{00053\ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_image}{Image}}\&\ \mbox{\hyperlink{class_image_a3037a583d17594b1835d9b6b8d09875c}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_image}{Image}}\&\ other);}
+\DoxyCodeLine{00060\ \ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_image_ab57e06fde0774476fe003e18dd5c3a2f}{getPixel}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00068\ \ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_a808b620b760436a963b6ee221c6e568c}{setPixel}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ r,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ g,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ b);}
+\DoxyCodeLine{00078\ \ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_a4bde6ace011eef9399c2af7b756729b1}{displayImageInfo}}();}
+\DoxyCodeLine{00083\ \ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{//\ Getters}}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{int}\ getWidth()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{int}\ getHeight()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{int}\ getChannels()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ getImageData()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00089\ \};}
+\DoxyCodeLine{00090\ \ }
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ IMAGE\_H}}
+
+\end{DoxyCode}

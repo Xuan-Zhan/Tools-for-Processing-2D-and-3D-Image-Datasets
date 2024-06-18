@@ -1,0 +1,153 @@
+\doxysection{Projection Class Reference}
+\hypertarget{class_projection}{}\label{class_projection}\index{Projection@{Projection}}
+
+
+Class for performing various types of projections on volumetric data.  
+
+
+
+
+{\ttfamily \#include $<$Projection.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_projection_a7a5a49dcd74c491ea9564e7a6ed573f1}{Projection}} (int width, int height)
+\begin{DoxyCompactList}\small\item\em Constructor to initialize width and height of the projection. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ \mbox{\hyperlink{class_projection_af05aa8895809f8e7685ee5b7510c164b}{perform\+MIP}} (const std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ $>$ \&volume\+Data)
+\begin{DoxyCompactList}\small\item\em Perform Maximum Intensity \doxylink{class_projection}{Projection} (MIP) on the volume data. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ \mbox{\hyperlink{class_projection_aaef43f228dd22548a93e8a3878e554f6}{perform\+Min\+IP}} (const std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ $>$ \&volume\+Data)
+\begin{DoxyCompactList}\small\item\em Perform Minimum Intensity \doxylink{class_projection}{Projection} (Min\+IP) on the volume data. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ \mbox{\hyperlink{class_projection_a3c417017a96f8e291a8ba6119dc653ee}{perform\+AIP}} (const std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ $>$ \&volume\+Data)
+\begin{DoxyCompactList}\small\item\em Perform Average Intensity \doxylink{class_projection}{Projection} (AIP) on the volume data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_projection_a86615b3b50fdf245b51fc48b4dfbd399}{get\+Start\+End\+Indices}} (int volume\+Size, int \&start\+Idx, int \&end\+Idx)
+\begin{DoxyCompactList}\small\item\em Get the start and end indices based on user input. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ \mbox{\hyperlink{class_projection_acb8bd174aa76997896d7bf05917d2491}{perform\+Projection}} (const \mbox{\hyperlink{class_volume}{Volume}} \&volume, const std\+::string \&projection\+Type)
+\begin{DoxyCompactList}\small\item\em Perform the specified projection type on the given volume data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for performing various types of projections on volumetric data. 
+
+Group name\+: Huffman Group member name/\+Github username\+: Yuheng Chen/acse-\/cc223 Panier, Atys/edsml-\/azp123 Crespin, Francois/\+Fc-\/1223 Xuan Zhan/edsml-\/xz3323 Yixuan Jiang/\+ACSE-\/yj3023 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_projection_a7a5a49dcd74c491ea9564e7a6ed573f1}\label{class_projection_a7a5a49dcd74c491ea9564e7a6ed573f1} 
+\index{Projection@{Projection}!Projection@{Projection}}
+\index{Projection@{Projection}!Projection@{Projection}}
+\doxysubsubsection{\texorpdfstring{Projection()}{Projection()}}
+{\footnotesize\ttfamily Projection\+::\+Projection (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Constructor to initialize width and height of the projection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the projection. \\
+\hline
+{\em height} & The height of the projection.\\
+\hline
+\end{DoxyParams}
+Group name\+: Huffman Group member name/\+Github username\+: Yuheng Chen/acse-\/cc223 Panier, Atys/edsml-\/azp123 Crespin, Francois/\+Fc-\/1223 Xuan Zhan/edsml-\/xz3323 Yixuan Jiang/\+ACSE-\/yj3023 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_projection_a86615b3b50fdf245b51fc48b4dfbd399}\label{class_projection_a86615b3b50fdf245b51fc48b4dfbd399} 
+\index{Projection@{Projection}!getStartEndIndices@{getStartEndIndices}}
+\index{getStartEndIndices@{getStartEndIndices}!Projection@{Projection}}
+\doxysubsubsection{\texorpdfstring{getStartEndIndices()}{getStartEndIndices()}}
+{\footnotesize\ttfamily void Projection\+::get\+Start\+End\+Indices (\begin{DoxyParamCaption}\item[{int}]{volume\+Size,  }\item[{int \&}]{start\+Idx,  }\item[{int \&}]{end\+Idx }\end{DoxyParamCaption})}
+
+
+
+Get the start and end indices based on user input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume\+Size} & The size of the volume. \\
+\hline
+{\em start\+Idx} & Reference to the start index. \\
+\hline
+{\em end\+Idx} & Reference to the end index. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_projection_a3c417017a96f8e291a8ba6119dc653ee}\label{class_projection_a3c417017a96f8e291a8ba6119dc653ee} 
+\index{Projection@{Projection}!performAIP@{performAIP}}
+\index{performAIP@{performAIP}!Projection@{Projection}}
+\doxysubsubsection{\texorpdfstring{performAIP()}{performAIP()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ Projection\+::perform\+AIP (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ $>$ \&}]{volume\+Data }\end{DoxyParamCaption})}
+
+
+
+Perform Average Intensity \doxylink{class_projection}{Projection} (AIP) on the volume data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume\+Data} & The volumetric data to perform the projection on. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 2D projection result. 
+\end{DoxyReturn}
+\Hypertarget{class_projection_aaef43f228dd22548a93e8a3878e554f6}\label{class_projection_aaef43f228dd22548a93e8a3878e554f6} 
+\index{Projection@{Projection}!performMinIP@{performMinIP}}
+\index{performMinIP@{performMinIP}!Projection@{Projection}}
+\doxysubsubsection{\texorpdfstring{performMinIP()}{performMinIP()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ Projection\+::perform\+Min\+IP (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ $>$ \&}]{volume\+Data }\end{DoxyParamCaption})}
+
+
+
+Perform Minimum Intensity \doxylink{class_projection}{Projection} (Min\+IP) on the volume data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume\+Data} & The volumetric data to perform the projection on. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 2D projection result. 
+\end{DoxyReturn}
+\Hypertarget{class_projection_af05aa8895809f8e7685ee5b7510c164b}\label{class_projection_af05aa8895809f8e7685ee5b7510c164b} 
+\index{Projection@{Projection}!performMIP@{performMIP}}
+\index{performMIP@{performMIP}!Projection@{Projection}}
+\doxysubsubsection{\texorpdfstring{performMIP()}{performMIP()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ Projection\+::perform\+MIP (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ $>$ \&}]{volume\+Data }\end{DoxyParamCaption})}
+
+
+
+Perform Maximum Intensity \doxylink{class_projection}{Projection} (MIP) on the volume data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume\+Data} & The volumetric data to perform the projection on. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 2D projection result. 
+\end{DoxyReturn}
+\Hypertarget{class_projection_acb8bd174aa76997896d7bf05917d2491}\label{class_projection_acb8bd174aa76997896d7bf05917d2491} 
+\index{Projection@{Projection}!performProjection@{performProjection}}
+\index{performProjection@{performProjection}!Projection@{Projection}}
+\doxysubsubsection{\texorpdfstring{performProjection()}{performProjection()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ Projection\+::perform\+Projection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_volume}{Volume}} \&}]{volume,  }\item[{const std\+::string \&}]{projection\+Type }\end{DoxyParamCaption})}
+
+
+
+Perform the specified projection type on the given volume data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volumetric data to perform the projection on. \\
+\hline
+{\em projection\+Type} & The type of projection to perform ("{}\+MIP"{}, "{}\+Min\+IP"{}, or "{}\+AIP"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 2D projection result. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Projection.\+h\item 
+src/Projection.\+cpp\end{DoxyCompactItemize}

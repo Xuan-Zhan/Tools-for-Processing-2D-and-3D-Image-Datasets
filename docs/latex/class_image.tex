@@ -1,0 +1,168 @@
+\doxysection{Image Class Reference}
+\hypertarget{class_image}{}\label{class_image}\index{Image@{Image}}
+
+
+Represents an image.  
+
+
+
+
+{\ttfamily \#include $<$Image.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_image_a58edd1c45b4faeb5f789b0d036d02313}{Image}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_image_a89990a9cb893bce33370f2ca244ac9df}{Image}} (unsigned char \texorpdfstring{$\ast$}{*}image\+Data, int w, int h, int ch)
+\begin{DoxyCompactList}\small\item\em Constructor with image data, width, height, and channels. \end{DoxyCompactList}\item 
+\Hypertarget{class_image_a0294f63700543e11c0f0da85601c7ae5}\label{class_image_a0294f63700543e11c0f0da85601c7ae5} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Image} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_image_a5a3bc57bd7ba53f9ae55b1963b9ba0a1}{Image}} (const \mbox{\hyperlink{class_image}{Image}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_image}{Image}} \& \mbox{\hyperlink{class_image_a3037a583d17594b1835d9b6b8d09875c}{operator=}} (const \mbox{\hyperlink{class_image}{Image}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+unsigned char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_image_ab57e06fde0774476fe003e18dd5c3a2f}{get\+Pixel}} (int x, int y) const
+\begin{DoxyCompactList}\small\item\em Get the pixel value at specified coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_image_a808b620b760436a963b6ee221c6e568c}{set\+Pixel}} (int x, int y, unsigned char r, unsigned char g, unsigned char b)
+\begin{DoxyCompactList}\small\item\em Set the pixel value at specified coordinates. \end{DoxyCompactList}\item 
+\Hypertarget{class_image_a4bde6ace011eef9399c2af7b756729b1}\label{class_image_a4bde6ace011eef9399c2af7b756729b1} 
+void {\bfseries display\+Image\+Info} ()
+\begin{DoxyCompactList}\small\item\em Print image metadata. \end{DoxyCompactList}\item 
+\Hypertarget{class_image_a36bcae4838228d574738249a87dc4464}\label{class_image_a36bcae4838228d574738249a87dc4464} 
+int {\bfseries get\+Width} () const
+\item 
+\Hypertarget{class_image_a1cd7587f88b6932b5269051d1ba08ff9}\label{class_image_a1cd7587f88b6932b5269051d1ba08ff9} 
+int {\bfseries get\+Height} () const
+\item 
+\Hypertarget{class_image_a821f52f44e80051e48b3f2689ba48611}\label{class_image_a821f52f44e80051e48b3f2689ba48611} 
+int {\bfseries get\+Channels} () const
+\item 
+\Hypertarget{class_image_af8b23d8e3658fc302883ca663a162410}\label{class_image_af8b23d8e3658fc302883ca663a162410} 
+unsigned char \texorpdfstring{$\ast$}{*} {\bfseries get\+Image\+Data} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an image. 
+
+Group name\+: Huffman Group member name/\+Github username\+: Yuheng Chen/acse-\/cc223 Panier, Atys/edsml-\/azp123 Crespin, Francois/\+Fc-\/1223 Xuan Zhan/edsml-\/xz3323 Yixuan Jiang/\+ACSE-\/yj3023 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_image_a58edd1c45b4faeb5f789b0d036d02313}\label{class_image_a58edd1c45b4faeb5f789b0d036d02313} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Group name\+: Huffman Group member name/\+Github username\+: Yuheng Chen/acse-\/cc223 Panier, Atys/edsml-\/azp123 Crespin, Francois/\+Fc-\/1223 Xuan Zhan/edsml-\/xz3323 Yixuan Jiang/\+ACSE-\/yj3023 \Hypertarget{class_image_a89990a9cb893bce33370f2ca244ac9df}\label{class_image_a89990a9cb893bce33370f2ca244ac9df} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{image\+Data,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{ch }\end{DoxyParamCaption})}
+
+
+
+Constructor with image data, width, height, and channels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Data} & Pointer to the image data \\
+\hline
+{\em w} & Width of the image \\
+\hline
+{\em h} & Height of the image \\
+\hline
+{\em ch} & Number of color channels \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_image_a5a3bc57bd7ba53f9ae55b1963b9ba0a1}\label{class_image_a5a3bc57bd7ba53f9ae55b1963b9ba0a1} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another \doxylink{class_image}{Image} object to be copied \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_image_ab57e06fde0774476fe003e18dd5c3a2f}\label{class_image_ab57e06fde0774476fe003e18dd5c3a2f} 
+\index{Image@{Image}!getPixel@{getPixel}}
+\index{getPixel@{getPixel}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{getPixel()}{getPixel()}}
+{\footnotesize\ttfamily unsigned char \texorpdfstring{$\ast$}{*} Image\+::get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const}
+
+
+
+Get the pixel value at specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/coordinate \\
+\hline
+{\em y} & Y-\/coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the pixel value 
+\end{DoxyReturn}
+\Hypertarget{class_image_a3037a583d17594b1835d9b6b8d09875c}\label{class_image_a3037a583d17594b1835d9b6b8d09875c} 
+\index{Image@{Image}!operator=@{operator=}}
+\index{operator=@{operator=}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} \& Image\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another \doxylink{class_image}{Image} object to be assigned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the modified \doxylink{class_image}{Image} object 
+\end{DoxyReturn}
+\Hypertarget{class_image_a808b620b760436a963b6ee221c6e568c}\label{class_image_a808b620b760436a963b6ee221c6e568c} 
+\index{Image@{Image}!setPixel@{setPixel}}
+\index{setPixel@{setPixel}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{setPixel()}{setPixel()}}
+{\footnotesize\ttfamily void Image\+::set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{unsigned char}]{r,  }\item[{unsigned char}]{g,  }\item[{unsigned char}]{b }\end{DoxyParamCaption})}
+
+
+
+Set the pixel value at specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/coordinate \\
+\hline
+{\em y} & Y-\/coordinate \\
+\hline
+{\em r} & Red channel value \\
+\hline
+{\em g} & Green channel value \\
+\hline
+{\em b} & Blue channel value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Image.\+h\item 
+src/Image.\+cpp\end{DoxyCompactItemize}

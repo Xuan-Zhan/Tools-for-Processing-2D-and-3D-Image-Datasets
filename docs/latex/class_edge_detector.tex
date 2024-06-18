@@ -1,0 +1,108 @@
+\doxysection{Edge\+Detector Class Reference}
+\hypertarget{class_edge_detector}{}\label{class_edge_detector}\index{EdgeDetector@{EdgeDetector}}
+
+
+Provides functions for detecting edges in images.  
+
+
+
+
+{\ttfamily \#include $<$Edge\+Detector.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_image}{Image}} \mbox{\hyperlink{class_edge_detector_a4b03d5cee526a4e1e5d652bc00419ca8}{apply\+Sobel}} (const \mbox{\hyperlink{class_image}{Image}} \&image)
+\begin{DoxyCompactList}\small\item\em Applies the Sobel edge detection filter to the input image. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_image}{Image}} \mbox{\hyperlink{class_edge_detector_a585bb6a2f51dfcd2efe240a04bcf3bc9}{apply\+Prewitt}} (const \mbox{\hyperlink{class_image}{Image}} \&image)
+\begin{DoxyCompactList}\small\item\em Applies the Prewitt edge detection filter to the input image. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_image}{Image}} \mbox{\hyperlink{class_edge_detector_a093e36a05fed80e4a0937270dc604f1b}{apply\+Scharr}} (const \mbox{\hyperlink{class_image}{Image}} \&image)
+\begin{DoxyCompactList}\small\item\em Applies the Scharr edge detection filter to the input image. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_image}{Image}} \mbox{\hyperlink{class_edge_detector_affce7343bc3b53653ece41b00c962da7}{apply\+Roberts\+Cross}} (const \mbox{\hyperlink{class_image}{Image}} \&image)
+\begin{DoxyCompactList}\small\item\em Applies the Robert\textquotesingle{}s Cross edge detection filter to the input image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides functions for detecting edges in images. 
+
+Group name\+: Huffman Group member name/\+Github username\+: Yuheng Chen/acse-\/cc223 Panier, Atys/edsml-\/azp123 Crespin, Francois/\+Fc-\/1223 Xuan Zhan/edsml-\/xz3323 Yixuan Jiang/\+ACSE-\/yj3023 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_edge_detector_a585bb6a2f51dfcd2efe240a04bcf3bc9}\label{class_edge_detector_a585bb6a2f51dfcd2efe240a04bcf3bc9} 
+\index{EdgeDetector@{EdgeDetector}!applyPrewitt@{applyPrewitt}}
+\index{applyPrewitt@{applyPrewitt}!EdgeDetector@{EdgeDetector}}
+\doxysubsubsection{\texorpdfstring{applyPrewitt()}{applyPrewitt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} Edge\+Detector\+::apply\+Prewitt (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Applies the Prewitt edge detection filter to the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & The input image to which the filter will be applied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting edge-\/detected image 
+\end{DoxyReturn}
+\Hypertarget{class_edge_detector_affce7343bc3b53653ece41b00c962da7}\label{class_edge_detector_affce7343bc3b53653ece41b00c962da7} 
+\index{EdgeDetector@{EdgeDetector}!applyRobertsCross@{applyRobertsCross}}
+\index{applyRobertsCross@{applyRobertsCross}!EdgeDetector@{EdgeDetector}}
+\doxysubsubsection{\texorpdfstring{applyRobertsCross()}{applyRobertsCross()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} Edge\+Detector\+::apply\+Roberts\+Cross (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Applies the Robert\textquotesingle{}s Cross edge detection filter to the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & The input image to which the filter will be applied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting edge-\/detected image 
+\end{DoxyReturn}
+\Hypertarget{class_edge_detector_a093e36a05fed80e4a0937270dc604f1b}\label{class_edge_detector_a093e36a05fed80e4a0937270dc604f1b} 
+\index{EdgeDetector@{EdgeDetector}!applyScharr@{applyScharr}}
+\index{applyScharr@{applyScharr}!EdgeDetector@{EdgeDetector}}
+\doxysubsubsection{\texorpdfstring{applyScharr()}{applyScharr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} Edge\+Detector\+::apply\+Scharr (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Applies the Scharr edge detection filter to the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & The input image to which the filter will be applied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting edge-\/detected image 
+\end{DoxyReturn}
+\Hypertarget{class_edge_detector_a4b03d5cee526a4e1e5d652bc00419ca8}\label{class_edge_detector_a4b03d5cee526a4e1e5d652bc00419ca8} 
+\index{EdgeDetector@{EdgeDetector}!applySobel@{applySobel}}
+\index{applySobel@{applySobel}!EdgeDetector@{EdgeDetector}}
+\doxysubsubsection{\texorpdfstring{applySobel()}{applySobel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} Edge\+Detector\+::apply\+Sobel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Applies the Sobel edge detection filter to the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & The input image to which the filter will be applied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting edge-\/detected image 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Edge\+Detector.\+h\item 
+src/Edge\+Detector.\+cpp\end{DoxyCompactItemize}

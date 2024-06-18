@@ -1,0 +1,96 @@
+\doxysection{Blur\+Filter Class Reference}
+\hypertarget{class_blur_filter}{}\label{class_blur_filter}\index{BlurFilter@{BlurFilter}}
+
+
+Provides functions for image blurring using various techniques.  
+
+
+
+
+{\ttfamily \#include $<$Blur\+Filter.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_image}{Image}} \mbox{\hyperlink{class_blur_filter_af4b6b75de85d1991384beeb6d0943721}{median\+Blur}} (const \mbox{\hyperlink{class_image}{Image}} \&image, int kernel\+Size)
+\begin{DoxyCompactList}\small\item\em Applies median blur to an image. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_image}{Image}} \mbox{\hyperlink{class_blur_filter_a0fab7b1281943c0d18abbd34a90e5113}{box\+Blur}} (const \mbox{\hyperlink{class_image}{Image}} \&image, int kernel\+Size)
+\begin{DoxyCompactList}\small\item\em Applies box blur to an image. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_image}{Image}} \mbox{\hyperlink{class_blur_filter_abe34d08fe2e55d2168e2ba56d0ce6db8}{gaussian\+Blur}} (const \mbox{\hyperlink{class_image}{Image}} \&image, int kernel\+Size, float sigma)
+\begin{DoxyCompactList}\small\item\em Applies Gaussian blur to an image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides functions for image blurring using various techniques. 
+
+Group name\+: Huffman Group member name/\+Github username\+: Yuheng Chen/acse-\/cc223 Panier, Atys/edsml-\/azp123 Crespin, Francois/\+Fc-\/1223 Xuan Zhan/edsml-\/xz3323 Yixuan Jiang/\+ACSE-\/yj3023 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_blur_filter_a0fab7b1281943c0d18abbd34a90e5113}\label{class_blur_filter_a0fab7b1281943c0d18abbd34a90e5113} 
+\index{BlurFilter@{BlurFilter}!boxBlur@{boxBlur}}
+\index{boxBlur@{boxBlur}!BlurFilter@{BlurFilter}}
+\doxysubsubsection{\texorpdfstring{boxBlur()}{boxBlur()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} Blur\+Filter\+::box\+Blur (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{image,  }\item[{int}]{kernel\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Applies box blur to an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The input image \\
+\hline
+{\em kernel\+Size} & The size of the box blur kernel (odd number) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image after box blur 
+\end{DoxyReturn}
+\Hypertarget{class_blur_filter_abe34d08fe2e55d2168e2ba56d0ce6db8}\label{class_blur_filter_abe34d08fe2e55d2168e2ba56d0ce6db8} 
+\index{BlurFilter@{BlurFilter}!gaussianBlur@{gaussianBlur}}
+\index{gaussianBlur@{gaussianBlur}!BlurFilter@{BlurFilter}}
+\doxysubsubsection{\texorpdfstring{gaussianBlur()}{gaussianBlur()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} Blur\+Filter\+::gaussian\+Blur (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{image,  }\item[{int}]{kernel\+Size,  }\item[{float}]{sigma = {\ttfamily 2.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Applies Gaussian blur to an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The input image \\
+\hline
+{\em kernel\+Size} & The size of the Gaussian blur kernel (odd number) \\
+\hline
+{\em sigma} & The standard deviation of the Gaussian distribution \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image after Gaussian blur 
+\end{DoxyReturn}
+\Hypertarget{class_blur_filter_af4b6b75de85d1991384beeb6d0943721}\label{class_blur_filter_af4b6b75de85d1991384beeb6d0943721} 
+\index{BlurFilter@{BlurFilter}!medianBlur@{medianBlur}}
+\index{medianBlur@{medianBlur}!BlurFilter@{BlurFilter}}
+\doxysubsubsection{\texorpdfstring{medianBlur()}{medianBlur()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} Blur\+Filter\+::median\+Blur (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{image,  }\item[{int}]{kernel\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Applies median blur to an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The input image \\
+\hline
+{\em kernel\+Size} & The size of the median blur kernel (odd number) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image after median blur 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Blur\+Filter.\+h\item 
+src/Blur\+Filter.\+cpp\end{DoxyCompactItemize}

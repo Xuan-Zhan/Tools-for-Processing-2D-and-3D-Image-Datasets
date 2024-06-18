@@ -1,0 +1,21 @@
+\doxysection{Three\+DFilter.\+h}
+\hypertarget{_three_d_filter_8h_source}{}\label{_three_d_filter_8h_source}\index{src/ThreeDFilter.h@{src/ThreeDFilter.h}}
+\mbox{\hyperlink{_three_d_filter_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#ifndef\ THREEDFILTER\_H}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ THREEDFILTER\_H}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_volume_8h}{Volume.h}}"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_three_d_filter}{ThreeDFilter}}\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_three_d_filter_a1d919c9f51df50dae525ead123c6ecf4}{gaussianBlur}}(\mbox{\hyperlink{class_volume}{Volume}}\&\ volume,\ \textcolor{keywordtype}{int}\ kernelSize,\ \textcolor{keywordtype}{float}\ sigma);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_three_d_filter_a4844e5c2c6c85ea6400f4199934d7da4}{medianFilter}}(\mbox{\hyperlink{class_volume}{Volume}}\&\ volume,\ \textcolor{keywordtype}{int}\ kernelSize);}
+\DoxyCodeLine{00039\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ gaussian(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ z,\ \textcolor{keywordtype}{float}\ sigma);}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

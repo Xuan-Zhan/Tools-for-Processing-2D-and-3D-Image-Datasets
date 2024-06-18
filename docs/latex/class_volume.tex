@@ -1,0 +1,167 @@
+\doxysection{Volume Class Reference}
+\hypertarget{class_volume}{}\label{class_volume}\index{Volume@{Volume}}
+
+
+Class for handling 3D volume data.  
+
+
+
+
+{\ttfamily \#include $<$Volume.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_volume_a7d3bb81da95df85009b9f3ddd985cd9f}{Volume}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_volume_ad5d2015f5c0fea005f02be8f6d60b212}\label{class_volume_ad5d2015f5c0fea005f02be8f6d60b212} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Volume} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const unsigned char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_volume_a64b871950ed2af2e5107b94154df5927}{get\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Get a pointer to the raw volumetric data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_volume_ad89e0969f656b9b38f237bfbaf86561c}{set\+Data}} (const std\+::vector$<$ unsigned char $>$ \&new\+Data)
+\begin{DoxyCompactList}\small\item\em Set the raw volumetric data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_volume_a6421ea4fb9b499e51499531dbc6999d5}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Get the width of the volumetric data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_volume_a33c75b641d988efed2ce4d2568e7269e}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Get the height of the volumetric data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_volume_ab082670ea100c39d94fefc77ac83c4d8}{get\+Depth}} () const
+\begin{DoxyCompactList}\small\item\em Get the depth of the volumetric data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_volume_a300a981d248f8d6a613d6344bceb82e9}{get\+Channels}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of channels in the volumetric data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ unsigned char $>$ \mbox{\hyperlink{class_volume_a972bfe6a100ed3c37d061a6b5b87e252}{data}}
+\item 
+\Hypertarget{class_volume_abbc396981317733b66c7e38d5ed0cea5}\label{class_volume_abbc396981317733b66c7e38d5ed0cea5} 
+int {\bfseries width}
+\item 
+\Hypertarget{class_volume_ad79b108cff727245b41914f371e88efe}\label{class_volume_ad79b108cff727245b41914f371e88efe} 
+int {\bfseries height}
+\item 
+\Hypertarget{class_volume_a6bc3c77db5cb8bd6daa7b2e75934f92f}\label{class_volume_a6bc3c77db5cb8bd6daa7b2e75934f92f} 
+int {\bfseries depth}
+\item 
+int \mbox{\hyperlink{class_volume_a3f32c80c7bdbab80d40508d6cfa4a00d}{channels}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for handling 3D volume data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_volume_a7d3bb81da95df85009b9f3ddd985cd9f}\label{class_volume_a7d3bb81da95df85009b9f3ddd985cd9f} 
+\index{Volume@{Volume}!Volume@{Volume}}
+\index{Volume@{Volume}!Volume@{Volume}}
+\doxysubsubsection{\texorpdfstring{Volume()}{Volume()}}
+{\footnotesize\ttfamily Volume\+::\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Group name\+: Huffman Group member name/\+Github username\+: Yuheng Chen/acse-\/cc223 Panier, Atys/edsml-\/azp123 Crespin, Francois/\+Fc-\/1223 Xuan Zhan/edsml-\/xz3323 Yixuan Jiang/\+ACSE-\/yj3023 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_volume_a300a981d248f8d6a613d6344bceb82e9}\label{class_volume_a300a981d248f8d6a613d6344bceb82e9} 
+\index{Volume@{Volume}!getChannels@{getChannels}}
+\index{getChannels@{getChannels}!Volume@{Volume}}
+\doxysubsubsection{\texorpdfstring{getChannels()}{getChannels()}}
+{\footnotesize\ttfamily int Volume\+::get\+Channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the number of channels in the volumetric data. 
+
+\begin{DoxyReturn}{Returns}
+The number of channels in the volumetric data. 
+\end{DoxyReturn}
+\Hypertarget{class_volume_a64b871950ed2af2e5107b94154df5927}\label{class_volume_a64b871950ed2af2e5107b94154df5927} 
+\index{Volume@{Volume}!getData@{getData}}
+\index{getData@{getData}!Volume@{Volume}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily const unsigned char \texorpdfstring{$\ast$}{*} Volume\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get a pointer to the raw volumetric data. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the raw volumetric data. 
+\end{DoxyReturn}
+\Hypertarget{class_volume_ab082670ea100c39d94fefc77ac83c4d8}\label{class_volume_ab082670ea100c39d94fefc77ac83c4d8} 
+\index{Volume@{Volume}!getDepth@{getDepth}}
+\index{getDepth@{getDepth}!Volume@{Volume}}
+\doxysubsubsection{\texorpdfstring{getDepth()}{getDepth()}}
+{\footnotesize\ttfamily int Volume\+::get\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the depth of the volumetric data. 
+
+\begin{DoxyReturn}{Returns}
+The depth of the volumetric data. 
+\end{DoxyReturn}
+\Hypertarget{class_volume_a33c75b641d988efed2ce4d2568e7269e}\label{class_volume_a33c75b641d988efed2ce4d2568e7269e} 
+\index{Volume@{Volume}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Volume@{Volume}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int Volume\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the height of the volumetric data. 
+
+\begin{DoxyReturn}{Returns}
+The height of the volumetric data. 
+\end{DoxyReturn}
+\Hypertarget{class_volume_a6421ea4fb9b499e51499531dbc6999d5}\label{class_volume_a6421ea4fb9b499e51499531dbc6999d5} 
+\index{Volume@{Volume}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Volume@{Volume}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int Volume\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the width of the volumetric data. 
+
+\begin{DoxyReturn}{Returns}
+The width of the volumetric data. 
+\end{DoxyReturn}
+\Hypertarget{class_volume_ad89e0969f656b9b38f237bfbaf86561c}\label{class_volume_ad89e0969f656b9b38f237bfbaf86561c} 
+\index{Volume@{Volume}!setData@{setData}}
+\index{setData@{setData}!Volume@{Volume}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily void Volume\+::set\+Data (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ unsigned char $>$ \&}]{new\+Data }\end{DoxyParamCaption})}
+
+
+
+Set the raw volumetric data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Data} & The new volumetric data. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_volume_a3f32c80c7bdbab80d40508d6cfa4a00d}\label{class_volume_a3f32c80c7bdbab80d40508d6cfa4a00d} 
+\index{Volume@{Volume}!channels@{channels}}
+\index{channels@{channels}!Volume@{Volume}}
+\doxysubsubsection{\texorpdfstring{channels}{channels}}
+{\footnotesize\ttfamily int Volume\+::channels}
+
+Width/\+High/\+Depth/\+Number of channels of the volumetric data. \Hypertarget{class_volume_a972bfe6a100ed3c37d061a6b5b87e252}\label{class_volume_a972bfe6a100ed3c37d061a6b5b87e252} 
+\index{Volume@{Volume}!data@{data}}
+\index{data@{data}!Volume@{Volume}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily std\+::vector$<$unsigned char$>$ Volume\+::data}
+
+Raw volumetric data. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_volume_8h}{Volume.\+h}}\item 
+src/Volume.\+cpp\end{DoxyCompactItemize}

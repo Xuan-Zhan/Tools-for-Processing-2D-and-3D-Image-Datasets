@@ -1,0 +1,23 @@
+\doxysection{Blur\+Filter.\+h}
+\hypertarget{_blur_filter_8h_source}{}\label{_blur_filter_8h_source}\index{src/BlurFilter.h@{src/BlurFilter.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ BLURFILTER\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ BLURFILTER\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}Image.h"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_blur_filter}{BlurFilter}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_image}{Image}}\ \mbox{\hyperlink{class_blur_filter_af4b6b75de85d1991384beeb6d0943721}{medianBlur}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_image}{Image}}\&\ image,\ \textcolor{keywordtype}{int}\ kernelSize);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_image}{Image}}\ \mbox{\hyperlink{class_blur_filter_a0fab7b1281943c0d18abbd34a90e5113}{boxBlur}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_image}{Image}}\&\ image,\ \textcolor{keywordtype}{int}\ kernelSize);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_image}{Image}}\ \mbox{\hyperlink{class_blur_filter_abe34d08fe2e55d2168e2ba56d0ce6db8}{gaussianBlur}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_image}{Image}}\&\ image,\ \textcolor{keywordtype}{int}\ kernelSize,\ \textcolor{keywordtype}{float}\ sigma);}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00048\ }
+
+\end{DoxyCode}

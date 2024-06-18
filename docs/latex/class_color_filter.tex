@@ -1,0 +1,136 @@
+\doxysection{Color\+Filter Class Reference}
+\hypertarget{class_color_filter}{}\label{class_color_filter}\index{ColorFilter@{ColorFilter}}
+
+
+Provides functions for color manipulation and filtering.  
+
+
+
+
+{\ttfamily \#include $<$Color\+Filter.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_image}{Image}} \mbox{\hyperlink{class_color_filter_a61680c54b2051e8489316d0751644179}{to\+Grayscale}} (const \mbox{\hyperlink{class_image}{Image}} \&image)
+\begin{DoxyCompactList}\small\item\em Converts an image to grayscale. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_image}{Image}} \mbox{\hyperlink{class_color_filter_a52983b5f0fa7669f552bca68818e0e15}{adjust\+Brightness}} (const \mbox{\hyperlink{class_image}{Image}} \&image, int brightness=0)
+\begin{DoxyCompactList}\small\item\em Adjusts the brightness of an image. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_image}{Image}} \mbox{\hyperlink{class_color_filter_ac4b0dec502ff4610dccc16a1eff121c7}{histogram\+Equalization}} (const \mbox{\hyperlink{class_image}{Image}} \&image, const char \texorpdfstring{$\ast$}{*}color\+Space)
+\begin{DoxyCompactList}\small\item\em Performs histogram equalization on an image. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_image}{Image}} \mbox{\hyperlink{class_color_filter_a66b0034a696adfcc2736a8069abf081d}{threshold\+Image}} (const \mbox{\hyperlink{class_image}{Image}} \&image, unsigned char threshold, const char \texorpdfstring{$\ast$}{*}color\+Space)
+\begin{DoxyCompactList}\small\item\em Thresholds an image to create a binary image. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_image}{Image}} \mbox{\hyperlink{class_color_filter_accec8d45c7e45228641e1078d0770d6a}{add\+Salt\+And\+Pepper\+Noise}} (const \mbox{\hyperlink{class_image}{Image}} \&img, float noise\+Percent)
+\begin{DoxyCompactList}\small\item\em Adds salt-\/and-\/pepper noise to an image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides functions for color manipulation and filtering. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_color_filter_accec8d45c7e45228641e1078d0770d6a}\label{class_color_filter_accec8d45c7e45228641e1078d0770d6a} 
+\index{ColorFilter@{ColorFilter}!addSaltAndPepperNoise@{addSaltAndPepperNoise}}
+\index{addSaltAndPepperNoise@{addSaltAndPepperNoise}!ColorFilter@{ColorFilter}}
+\doxysubsubsection{\texorpdfstring{addSaltAndPepperNoise()}{addSaltAndPepperNoise()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} Color\+Filter\+::add\+Salt\+And\+Pepper\+Noise (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{img,  }\item[{float}]{noise\+Percent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds salt-\/and-\/pepper noise to an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & The input image \\
+\hline
+{\em noise\+Percent} & The percentage of pixels to add noise to (0 to 1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image with salt-\/and-\/pepper noise added 
+\end{DoxyReturn}
+\Hypertarget{class_color_filter_a52983b5f0fa7669f552bca68818e0e15}\label{class_color_filter_a52983b5f0fa7669f552bca68818e0e15} 
+\index{ColorFilter@{ColorFilter}!adjustBrightness@{adjustBrightness}}
+\index{adjustBrightness@{adjustBrightness}!ColorFilter@{ColorFilter}}
+\doxysubsubsection{\texorpdfstring{adjustBrightness()}{adjustBrightness()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} Color\+Filter\+::adjust\+Brightness (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{image,  }\item[{int}]{brightness = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adjusts the brightness of an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The input image \\
+\hline
+{\em brightness} & The amount by which to adjust the brightness (-\/255 to 255) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image with adjusted brightness 
+\end{DoxyReturn}
+\Hypertarget{class_color_filter_ac4b0dec502ff4610dccc16a1eff121c7}\label{class_color_filter_ac4b0dec502ff4610dccc16a1eff121c7} 
+\index{ColorFilter@{ColorFilter}!histogramEqualization@{histogramEqualization}}
+\index{histogramEqualization@{histogramEqualization}!ColorFilter@{ColorFilter}}
+\doxysubsubsection{\texorpdfstring{histogramEqualization()}{histogramEqualization()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} Color\+Filter\+::histogram\+Equalization (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{image,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{color\+Space }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Performs histogram equalization on an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The input image \\
+\hline
+{\em color\+Space} & The color space of the image ("{}\+HSL"{} or "{}\+HSV"{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image after histogram equalization 
+\end{DoxyReturn}
+\Hypertarget{class_color_filter_a66b0034a696adfcc2736a8069abf081d}\label{class_color_filter_a66b0034a696adfcc2736a8069abf081d} 
+\index{ColorFilter@{ColorFilter}!thresholdImage@{thresholdImage}}
+\index{thresholdImage@{thresholdImage}!ColorFilter@{ColorFilter}}
+\doxysubsubsection{\texorpdfstring{thresholdImage()}{thresholdImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} Color\+Filter\+::threshold\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{image,  }\item[{unsigned char}]{threshold,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{color\+Space }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Thresholds an image to create a binary image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The input image \\
+\hline
+{\em threshold} & The threshold value \\
+\hline
+{\em color\+Space} & The color space of the image ("{}\+HSL"{} or "{}\+HSV"{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The thresholded binary image 
+\end{DoxyReturn}
+\Hypertarget{class_color_filter_a61680c54b2051e8489316d0751644179}\label{class_color_filter_a61680c54b2051e8489316d0751644179} 
+\index{ColorFilter@{ColorFilter}!toGrayscale@{toGrayscale}}
+\index{toGrayscale@{toGrayscale}!ColorFilter@{ColorFilter}}
+\doxysubsubsection{\texorpdfstring{toGrayscale()}{toGrayscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image}{Image}} Color\+Filter\+::to\+Grayscale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_image}{Image}} \&}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts an image to grayscale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The input image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The grayscale version of the input image 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Color\+Filter.\+h\item 
+src/Color\+Filter.\+cpp\end{DoxyCompactItemize}
